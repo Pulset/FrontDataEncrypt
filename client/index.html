@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form
+      style="
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      "
+    >
+      <div class="form-group">
+        <label for="userName">用户名</label>
+        <input
+          type="email"
+          class="form-control"
+          id="userName"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">密码</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn btn-primary" onclick="submitFn()">
+          登陆
+        </button>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+    <script src="./lib/aes-js/index.js"></script>
+    <script src="./lib/jsencrypt/bin/jsencrypt.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  </body>
+</html>
